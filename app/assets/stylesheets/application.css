@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+  margin-top: 0;
+  /* background-color: #eff4f5; */
+  font-family: 'Merriweather', serif;
+}
+
+.header {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  font-style: italic;
+  display: contents;
+  color: #ea0707;
+}
+
+.logo a:hover {
+  background-color: transparent;
+  text-decoration: none;
+  background-color: white;
+  color: #ea0707;
+}
+
+.count-down-timer {
+  margin-top: 80px;
+  font-size: 6em;
+}
+
+.count-down-timer span {
+  font-size: 4em;
+  font-family: 'Merriweather', serif;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.buttons button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.break-title {
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.break-img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  float: left;
+}
+
+.break-summary {
+  margin-left: 180px;
+  max-width: 300px;
+}

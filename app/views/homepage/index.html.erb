@@ -1,0 +1,8 @@
+<% @text_books.each do |text_book| %>
+    <div class="textbooks">
+      <%= link_to(text_book_path(text_book)) do %>
+        <h3 class="textbook-title"><%= text_book.name %></h3>
+        <%= image_tag(text_book.cover) %>
+      <% end %>
+    </div>
+<% end %>

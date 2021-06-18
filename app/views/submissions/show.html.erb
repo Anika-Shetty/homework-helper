@@ -1,0 +1,10 @@
+<h1> <%=@submission.comment%></h1>
+<p><%= image_tag(@submission.picture) %></p>
+<h2> Comments </h2>
+<% @submission.comments.each do |comment| %>
+  <p>
+    <h3> <%=comment.comment%></h3>
+    <h4> <%=comment.user.name%></h4>
+    <span> <%=comment.created_at %></span>
+  </p>
+<% end %>

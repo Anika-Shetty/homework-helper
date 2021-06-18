@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Zen Homework</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <%= favicon_link_tag asset_path('/logo.png') %>
+  </head>
+
+  <body>
+    <div class="header">
+      <span class="logo">
+        <a  href="/"><img src="/logo.png" height="100" width="100"/>ZenHomework</a>
+      </span>
+      <span class="profile">
+        <% if user_signed_in? %>
+          <span> <%= current_user.name %> </span>
+        <% end %>
+        </<br>>
+        <span class="hmenu">
+          <%= render 'devise/menu/registration_items' %>
+          <%= render 'devise/menu/login_items' %>
+        </span>
+      </span>
+    </div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p
+    <%= yield %>
+  </body>
+</html>

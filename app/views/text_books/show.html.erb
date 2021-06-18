@@ -1,0 +1,4 @@
+<h1> <%=@text_book.name%></h1>
+<% @text_book.submissions.each do |submission| %>
+  <h2><%= link_to submission.comment, submission_path(submission)=%></h2>
+<% end %>
